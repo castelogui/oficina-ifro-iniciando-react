@@ -26,7 +26,7 @@ export default class AlunoAlterar extends React.Component {
       if ( !match || !match.params ) {
         return;
       }
-      debugger
+
       const { id } = match.params;
       const response = await fetch( `http://localhost:3001/alunos/${id}` )
 

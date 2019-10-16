@@ -75,7 +75,7 @@ class Alunos extends React.Component {
   constructor ( props ) {
     super( props );
     this.state = {
-      alunos: [ { nome: "Igor", idade: 20, email: "igor@gmail.com" } ]
+      alunos: []
     }
   }
 
@@ -85,7 +85,7 @@ class Alunos extends React.Component {
 
   async listarAlunos() {
     try {
-      debugger
+
       const response = await fetch( "http://localhost:3001/alunos" );
 
       if ( !response.ok ) {
@@ -103,7 +103,7 @@ class Alunos extends React.Component {
   render() {
     const { alunos } = this.state;
 
-    return <ListaAlunos alunos={ alunos || [] } onDelete={ () => this.listarAlunos() } />
+    return <ListaAlunos alunos={ alunos } onDelete={ () => this.listarAlunos() } />
   }
 }
 
