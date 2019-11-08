@@ -1,2 +1,12 @@
-# oficina-ifro-iniciando-react
-Aplicação React para a oficina do IFRO "Iniciando com React.js"
+## Requisitos básicos do projeto
+
+ 1. [Node.js](https://nodejs.org/en/download/);
+
+## Clonar o projeto
+`git clone https://github.com/IgorColetoBueno/oficina-ifro-api-nodejs `
+
+## Instalar pacotes
+`npm install`
+
+## Executando o projeto
+`npm start`
